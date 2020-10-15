@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="">
+
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- Fontawesome -->
+
+    <!-- Mean Menu -->
+    <link rel="stylesheet" href="jQuery-Plugin-for-Responsive-Menu-System-meanMenu/meanmenu.min.css" />
+    <link rel="stylesheet" href="code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Main style -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- jquery latest version -->
+    <script src="jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <!-- Slick jquery carousel -->
+    <script src="slick/slick.min.js"></script>
+    <!-- Mean menu jquery -->
+    <script src="/jQuery-Plugin-for-Responsive-Menu-System-meanMenu/jquery.meanmenu.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <!-- <script src="//js/main.js"></script> -->
+    <link rel="stylesheet" href="css/brightworld.css">
+    <script src="js/brightworld.js"></script>
+
+
+
+
+    <!------- NavBar ------->
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li><img src="img/logosearch.jpg" width="200px" alt=""></li>
+                    <li>
+                        <form action="" method="GET" class="navbar-form navbar-left" role="search">
+                            <div class="input-group">
+                                <input type="search" name="search" class="form-control"
+                                    placeholder="Search for Products" id="search">
+                                <button type="submit"><span
+                                        class="glyphicon glyphicon-search glyp-search"></span></button>
+                            </div>
+                        </form>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html"><b>Home <span class="glyphicon glyphicon-home"></span></b></a></li>
+                    <li><a href="aboutus.html"><b>About Us <span class="glyphicon glyphicon-info-sign"></span></b></a>
+                    </li>
+                    <li><a href="contactus.html"><b>Contact Us <span class="glyphicon glyphicon-send"></span></b></a>
+                    </li>
+                    <li>
+                        <a href="product.html"><b>Product <span class="glyphicon glyphicon-lamp"></span></b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!------- Navbar End ------->
+    <br> <br>
+</head>
+
+<body>
+
+    <ul class="list-group" id="ul"></ul>
+    <!-- SHOP start-->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <!------------ Product-item start ------------>
+                <div class="col-md-9 col-md-push-3 col-xs-12">
+                    <div class="shop-content">
+                        <!-- Tab Content start -->
+                        <div class="tab-content">
+                            <!-- grid-view -->
+                            <div role="tabpanel" class="tab-pane active" id="grid-view">
+                                <div class="row" id="myProduct">
+                                    <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="product-item">
+                                            <div class="panel panel-default text-center">
+                                                <div class="panel-heading">
+                                                    <h1>Circle Bulb 1</h1>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <p><strong>Power: </strong> 1W</p>
+                                                    <p><strong>Voltage: </strong> (170-220)V</p>
+                                                    <p><strong>Color :</strong> white, warm white, red, purple</p>
+                                                    <p>(Click for details)</p>
+                                                </div>
+                                                <div class="panel-footer">
+                                                    <h3>$3</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------------ Product-item end ------------>
+                <!------------ Filter start ------------>
+                <div class="col-md-3 col-md-pull-9 col-xs-12">
+                    <!-- widget-categories -->
+                    <aside class="widget widget-categories">
+                        <h5 class="widget-title border-left brands">BRANDS</h5>
+                        <div id="cat-treeview" class="product-cat">
+                            <ul>
+                                <li class="brandParent" data-brand="all"><a href="javascript:void(0)">ALL</a>
+                                </li>
+                                <li class="brandParent" data-brand="PANASONIC"><a
+                                        href="javascript:void(0)">PANASONIC</a>
+                                </li>
+                                <li class="brandParent" data-brand="PHILIPS"><a href="javascript:void(0)">PHILIPS</a>
+                                </li>
+                                <li class="brandParent" data-brand="DIENQUANG"><a href="javascript:void(0)">DIEN QUANG</a>
+                                </li>
+                                <li class="brandParent" data-brand="SSLIGHT"><a href="javascript:void(0)">SSLIGHT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <!-- operating-system -->
+                    <aside class="widget">
+                        <h5 class="widget-title border-left brands" >CATEGORIES</h5>
+                        <form action="action_page.php">
+                            <label><input class="widget-checkbox cateParent" type="checkbox" name="operating-1"
+                                    value="BULB">BULB</label><br>
+                            <label><input class="widget-checkbox cateParent" type="checkbox" name="operating-1"
+                                    value="DECOR">DECORATION</label><br>
+                            <label><input class="widget-checkbox cateParent" type="checkbox" name="operating-1"
+                                    value="SL">SMART LIGHT</label><br>
+                            <label><input class="widget-checkbox cateParent" type="checkbox" name="operating-1"
+                                    value="SpL">SPOT LIGHT</label><br>
+                        </form>
+                    </aside>
+
+                    <aside class="widget">
+                        <h5 class="widget-title border-left brands">DESCRIPTION</h5>
+                        <form action="action_page.php">
+                            <ul>
+                                <li class="glyphicon glyphicon-folder-open"><a href="LED DESCRIPTIONS.docx"> DOC</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li class="glyphicon glyphicon-folder-open"><a href="LED DESCRIPTIONS.pdf"> PDF </a></li>
+                            </ul>
+                        </form>
+                    </aside>
+                </div>
+                <!------------ Filter end ------------>
+            </div>
+        </div>
+
+        <!------------ modal-item start ------------>
+        <div class="modal fade" id="modal-id">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h3>Circle Bulb 1<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button></h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mod-pro-img">
+                            <img src="products/BULB/PA/PB1.png" alt="">
+                        </div>
+                        <div class="mod-pro-cont">
+                            <p>Model: A451W</p>
+                            <p>Power: 1W</p>
+                            <p>Voltage: (170-220)V</p>
+                            <p>Light efficiency: 70lm/W</p>
+                            <p>Lifespan: 15000 hours</p>
+                            <p>Color : white, warm white, red, purple</p>
+                            <p>Dimensons : (45x69)mm</p>
+                            <p>On/off: 50.000 times</p>
+                            <p>Start time: less than 0.5 seconds</p>
+                        </div>
+                    </div>
+                    <div class="feedback">
+                        <h4>Leave a Comment:</h4>
+                        <form role="form">
+                            <div class="form-group">
+                                <textarea id="areafb" class="form-control" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                        <br><br>
+
+                        <p><span class="badge">2</span> Comments:</p><br>
+
+                        <div class="row">
+                            <div class="col-sm-2 text-center">
+                                <img src="suit2.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                            </div>
+                            <div class="col-sm-10">
+                                <h4>Mr.K <small>Sep 29, 2015, 9:12 PM</small></h4>
+                                <p>Keep up the GREAT work! I am cheering for you!.</p>
+                                <br>
+                            </div>
+                            <div class="col-sm-2 text-center">
+                                <img src="suit1.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+                            </div>
+                            <div class="col-sm-10">
+                                <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                                <p>I am so happy for you man! Finally. I am looking forward to read about your trendy
+                                    life..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------ modal-item end ------------>
+        <!-- SHOP end-->
+
+
+</body>
+
+<!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto text-left">
+
+                <!-- Content -->
+                <h3 style="color: rgb(134, 211, 225); font-weight: bolder;">BRIGHTWORLD</h3>
+                <p style="color: rgb(214, 223, 224);">BRIGHTWORLD is a company that focuses on the design and
+                    manufacture of LED bulbs. We offerprofessional OEM/ODM/SKD LED solutions and branding/marketing
+                    support to clients. The company was founded in August,2015 in VIETNAM, and now becomes a top
+                    exporter of LED bulbs in SAIGON, selling to over 50 countries worldwide.</p>
+
+            </div>
+
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+                <div style="vertical-align: auto;" class="col-md-6 mx-auto">
+                    <br><br>
+                    <!-- Links -->
+                    <a href="index.html" style="text-decoration: none;">
+                        <h5 class="text-uppercase mt-3 mb-4 " id="map">home</h5>
+                    </a>
+                    <br><br>
+                    <a href="aboutus.html" style="text-decoration: none;">
+                        <h5 class="text-uppercase mt-3 mb-4" id="map">about us</h5>
+                    </a>
+                    <br><br>
+                </div>
+                <div style="vertical-align: auto;" class="col-md-6 mx-auto">
+                    <br><br>
+                    <!-- Links -->
+                    <a href="contactus.html" style="text-decoration: none;">
+                        <h5 class="text-uppercase mt-3 mb-4" id="map">contact us</h5>
+                    </a><br><br>
+                    <a href="product.html" style="text-decoration: none;">
+                        <h5 class="text-uppercase mt-3 mb-4" id="map">products</h5>
+                    </a><br><br>
+                </div>
+            </div>
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto" id="social">
+
+                <!-- Social buttons -->
+                <br><br>
+                <span style="color:rgb(237, 241, 241) ; font-weight: bolder; font-size: x-large;">Follow us
+                    on:</span>
+                <br><br><br>
+                <a href="index.html"><i class="fa fa-facebook-square fa_fb fa-3x text-left"></i></a>
+                <a href="index.html"><i class="fa fa-google-plus-square fa_gplus fa-3x text-left"></i></a>
+                <a href="index.html"><i class="fa fa-instagram fa_insta fa-3x text-left"></i></a>
+                <!-- Social buttons -->
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid column -->
+
+
+    </div>
+    <!-- Grid row -->
+
+
+    <!-- Footer Links -->
+
+
+
+    <!-- Feedback button start-->
+    <ul class="list-unstyled list-inline text-center py-2">
+        <div class="container">
+            <button type="button" class="btn btn-success btn-rounded" id="btToggle">Feedback</button>
+            <strong style="display: none;">
+                <div class="col-sm-7">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                    required>
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                    required>
+                            </div>
+                        </div>
+                        <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                            rows="5"></textarea><br>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button class="btn btn-default pull-right" type="submit"><a
+                                        href="index.html">Send</a></button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </strong>
+        </div>
+
+    </ul>
+    <!-- Feedback button end-->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">Designed by Team 1 ©2020 Copyright:
+        <a href="index.html" style="text-decoration: none;"> BRIGHTWORLD.com</a>
+    </div>
+    <!-- Copyright -->
+    <button onclick="topFunction()" class="btn btn-default" id="ontop" title="BACK TO TOP"><span
+            class="glyphicon glyphicon-upload"></span></button>
+</footer>
+
+
+
+<script>
+    jQuery(document).ready(function ($) {
+        var params = {}
+        var products
+        var authorArr
+        //-------------- search suggestion --------------
+        $.ajaxSetup({ cache: false });
+        $("#search").keyup(function () {
+            $("#ul").html("");
+            var searchField = $("#search").val();
+            var expression = new RegExp(searchField, "i");
+            $.getJSON("product1.json", function (data) {
+                $.each(data, function (key, value) {
+                    if(searchField.length >=1){
+                        if (value.name.search(expression) != -1 || value.model.search(expression) != -1) {
+                            $('#ul').append('<li class="list-group-item link-class"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" > | ' + value.name + ' | <span class="text-muted">' + value.model + '</span></li>');
+                        }
+                    }
+                });
+            });
+        });
+        //-------------- end search suggestion --------------
+        //------------- search -------------
+        window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (str, key, value) {
+            params[key] = value;
+        });
+
+        for (var [key, value] of Object.entries(params)) {
+            if (key == 'brand') {
+                $(`.brandParent[data-brand=${value}]`).children().addClass('activeProduct')
+            } else if (key == 'cate') {
+                $(`.${key}Parent[value=${value}]`).attr('checked', true)
+            }
+        }
+        //------------- end search -------------
+
+        //input product
+        $.ajax({
+            url: 'product1.json',
+            type: 'GET',
+        })
+
+        //fill product inside
+        .done(function (data) {
+            products = data
+            authorArr = products.map(ele => ele.name)
+            getProduct(params, data)
+        });
+
+        //------------- input value for filter -------------
+        $('.brandParent').click(function (e) {
+            if ($(this).data('brand') == 'all') {
+                let param = getUpdatedParam("brand", $(this).data('brand'), 'remove')
+                window.location.href = 'product.html?' + param
+            } else {
+                let param = getUpdatedParam("brand", $(this).data('brand'))
+                window.location.href = 'product.html?' + param
+            }
+        })
+
+        $('.cateParent').click(function (e) {
+            if (!$(this).is(':checked')) {
+                let param = getUpdatedParam("cate", $(this).val(), 'remove')
+                window.location.href = 'product.html?' + param;
+            } else {
+                let param = getUpdatedParam("cate", $(this).val())
+                window.location.href = 'product.html?' + param;
+            }
+        })
+
+        //------------- end input value for filter -------------
+
+        //-------------click on product-------------
+        $(document).on('click', '.product-item', function () {
+            let id = $(this).data('id')
+            let product = products.filter(ele => ele.model == id)
+
+            addModal(product[0])
+            $('#modal-id').modal('show')
+        })
+        //----------- end click on -----------
+    })
+
+
+    //---------- update keyword ----------  
+    function getUpdatedParam($param, $value, $name = 'add') {
+        var params = {};
+        window.location.search
+            .replace(/[?&]+([^=&]+)=([^&]*)/gi, function (str, key, value) {
+                params[key] = value;
+            });
+        switch ($name) {
+            case 'add':
+                params[$param] = $value;
+                break;
+            case 'remove':
+                delete params[$param]
+                break;
+        }
+        var x = [];
+        for (p in params) {
+            x.push(p + "=" + params[p]);
+        }
+        return str_param = x.join("&");
+    }
+    //-------- end update keyword --------
+
+    //---------- update page by filter and search ----------
+    function getProduct(params, data) {
+
+        let items = data
+        for (var [key, value] of Object.entries(params)) {
+            switch (key) {
+                case 'search':
+                    let ten = decodeURIComponent((value + '').replace(/\+/g, ' '));
+
+                    ten = new RegExp(ten, "gi");
+                    items = items.filter(ele => ele.name.search(ten) >= 0);
+
+                    break;
+                default:
+                    items = items.filter(ele => ele[key] == value)
+                    break;
+            }
+        }
+        //-------- end filter and search -------- 
+        let x = ``
+        items.forEach(ele =>
+            x += `
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="product-item" data-id="${ele.model}">
+                            <div class="panel panel-default">
+                                <div class="panel-heading text-center">
+                                    <h4>${ele.name}</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="product-img">
+                                        <img src="${ele.image}" alt="">
+                                    </div>
+                                    <div class="product-cont">
+                                        <p><strong>Power: </strong>${ele.power}</p>
+                                        <p><strong>Voltage: </strong>${ele.voltage}</p>
+                                        <p><strong>Color : </strong>${ele.color}</p><br>
+                                    </div>
+                                    <div class="product-brand text-center">
+                                        <h4>${ele.brand}</h4>
+                                    </div>
+                                </div>
+                                <div class="panel-footer text-center">
+                                    <h4>${ele.price}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     `
+        );
+        $('#myProduct').html(x)
+    }
+    //------------------------------------------------------------
+    function addModal(data) {
+        let x = `
+    <div class="modal-content">
+        <div class="col-md-12 col-lg-12 col-xs-12">
+            <div class="modal-header text-center">
+                <p><img src="${data.logo}" alt="" class="modal-h2brand"><br><h2 class="modal-h2name">${data.name}</h2><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button></p>
+            </div>
+            <div class="modal-body">
+                <div class="mod-pro-img">
+                    <img src="${data.image}" alt="">
+                </div>
+                <div class="mod-pro-cont">
+                    <p>Model: ${data.model}</p>
+                    <p>Power: ${data.power}</p>
+                    <p>Voltage: ${data.voltage}</p>
+                    <p>Light efficiency: ${data.efficiency}</p>
+                    <p>Lifespan: 15000 hours</p>
+                    <p>Color : ${data.color}</p>
+                    <p>Dimensons : ${data.dimensions}</p>
+                    <p>On/off: 50.000 times</p>
+                    <p>Start time: less than 0.5 seconds</p>
+                </div>
+            </div>
+        </div>  
+        <div class="col-md-12 col-lg-12 col-xs-12">
+            <div class="feedback">
+                <h4>Leave a Comment:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea id="areafb" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+                <br><br>
+
+                <p><span class="badge">2</span> Comments:</p><br>
+
+                <div class="row">
+                    <div class="col-sm-2 text-center">
+                        <img class="img-cmt" src="img/ava1.jpeg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>Mr.K <small>Sep 29, 2015, 9:12 PM</small></h4>
+                        <p>Keep up the GREAT work! I am cheering for you!.</p>
+                        <br>
+                    </div>
+                    <div class="col-sm-2 text-center">
+                        <img class="img-cmt" src="img/ava2.jpeg" class="img-circle" height="65" width="65" alt="Avatar">
+                    </div>
+                    <div class="col-sm-10">
+                        <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+                        <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>`
+        $('.modal-dialog').html(x)
+    }
+</script>
+
+
+</html>
