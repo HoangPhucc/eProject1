@@ -41,9 +41,7 @@
     <script src="js/brightworld.js"></script>
 
 
-
-
-    <!------- NavBar ------->
+    <!--NavBar-->
     <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: black;">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -53,36 +51,27 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse " id="myNavbar">
-                <ul class="nav navbar-nav">
-
-                    <li><img src="img/logosearch.jpg" width="200px" alt=""></li>
-                    <li>
-                        <form action="" method="GET" class="navbar-form navbar-left" role="search">
-                            <div class="input-group">
-                                <input type="search" name="search" class="form-control"
-                                    placeholder="Search for Products" id="search">
-                                <button type="submit"><span
-                                        class="glyphicon glyphicon-search glyp-search"></span></button>
-                            </div>
-                        </form>
-                    </li>
-
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html"><b>Home <span class="glyphicon glyphicon-home"></span></b></a></li>
-                    <li><a href="aboutus.html"><b>About Us <span class="glyphicon glyphicon-info-sign"></span></b></a>
-                    </li>
-                    <li><a href="contactus.html"><b>Contact Us <span class="glyphicon glyphicon-send"></span></b></a>
-                    </li>
-                    <li>
-                        <a href="product.html"><b>Product <span class="glyphicon glyphicon-lamp"></span></b></a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav navbar-left myNavbarpr">
+                <li class="nav-class col-lg-2 col-md-2 col-xs-2"><img src="img/logosearch.jpg" width="200px" alt=""></li>
+                <li class="nav-class col-lg-2 col-md-2 col-xs-2"><a href="index.html"><b>Home <span class="glyphicon glyphicon-home"></span></b></a></li>
+                <li class="nav-class col-lg-2 col-md-2 col-xs-2"><a href="aboutus.html"><b>About Us <span class="glyphicon glyphicon-info-sign"></span></b></a>
+                </li>
+                <li class="col-lg-2 col-md-2 col-xs-2">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for Products" id="search">
+                            <span class="input-group-addon btn btn-default" id="btList"><i
+                                    class="glyphicon glyphicon-search"></i></span>
+                        </div>
+                    </form>
+                </li>
+                <li class="nav-class col-lg-2 col-md-2 col-xs-2"><a href="contactus.html"><b>Contact Us <span class="glyphicon glyphicon-send"></span></b></a>
+                </li>
+                <li class="nav-class col-lg-2 col-md-2 col-xs-2"><a href="#"><b>Products <span class="glyphicon glyphicon-lamp"></span></b></a></li>
+            </ul>
         </div>
     </nav>
-    <!------- Navbar End ------->
+    <!--Navbar End-->
     <br> <br>
 </head>
 
