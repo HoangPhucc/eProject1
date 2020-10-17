@@ -6,9 +6,13 @@
     z-index: 9000
 }
 
+.from-search:hover{
+    background-color: #01AEF0;
+}
+
 .myNavbarpr{
-    /* margin-left: 9.5%; */
-    /* background-color: #01AEF0; */
+    /* margin-left: -3%;
+    background-color: #01AEF0; */
     width: 100%;
 }
 .myNavbar{
@@ -283,9 +287,12 @@ body>.container-fluid {
     height: 45px;
     border-radius: 50%;
 }
+#search{
+    width: 150px;
+}
 .glyp-search{
     padding-top: 4px;
-    width: 28px;
+    width: 22px;
     height: 28px;
     text-align: center;
 }
